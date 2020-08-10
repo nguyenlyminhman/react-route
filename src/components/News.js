@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import NewsItem from './NewsItem';
+import data from '../data/data.json'
 
 class News extends Component {
     constructor(props) {
@@ -24,84 +26,17 @@ class News extends Component {
                     {/* Begin tintuc */}
                     <div className="container">
                         <div className="row ">
-                            <div className="col-4 mt-3">
-                                <div className="card-deck">
-                                    <div className="card">
-                                        <a href="chitiet.html"> <img className="card-img-top" src="http://placehold.it/800x400" alt="yub yeb" /></a>
-                                        <div className="card-body">
-                                            <a href="chitiet.html">
-                                                <h4 className="card-title">Tin tức số 1</h4>
-                                            </a>
-                                            <p className="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, doloremque possimus aliquid vitae sint, error explicabo iusto sed modi asperiores quae dolores. Quas unde voluptates, officiis voluptate voluptatem est quasi.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-4 mt-3">
-                                <div className="card-deck">
-                                    <div className="card">
-                                        <a href="chitiet.html"> <img className="card-img-top" src="http://placehold.it/800x400" alt="yub yeb" /></a>
-                                        <div className="card-body">
-                                            <a href="chitiet.html">
-                                                <h4 className="card-title">Tin tức số 1</h4>
-                                            </a>
-                                            <p className="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, doloremque possimus aliquid vitae sint, error explicabo iusto sed modi asperiores quae dolores. Quas unde voluptates, officiis voluptate voluptatem est quasi.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-4 mt-3">
-                                <div className="card-deck">
-                                    <div className="card">
-                                        <a href="http://"> <img className="card-img-top" src="http://placehold.it/800x400" alt="yub yeb" /></a>
-                                        <div className="card-body">
-                                            <a href="chitiet.html">
-                                                <h4 className="card-title">Tin tức số 1</h4>
-                                            </a>
-                                            <p className="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, doloremque possimus aliquid vitae sint, error explicabo iusto sed modi asperiores quae dolores. Quas unde voluptates, officiis voluptate voluptatem est quasi.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-4 mt-3">
-                                <div className="card-deck">
-                                    <div className="card">
-                                        <a href="http://"> <img className="card-img-top" src="http://placehold.it/800x400" alt="yub yeb" /></a>
-                                        <div className="card-body">
-                                            <a href="chitiet.html">
-                                                <h4 className="card-title">Tin tức số 1</h4>
-                                            </a>
-                                            <p className="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, doloremque possimus aliquid vitae sint, error explicabo iusto sed modi asperiores quae dolores. Quas unde voluptates, officiis voluptate voluptatem est quasi.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-4 mt-3">
-                                <div className="card-deck">
-                                    <div className="card">
-                                        <a href="http://"> <img className="card-img-top" src="http://placehold.it/800x400" alt="yub yeb" /></a>
-                                        <div className="card-body">
-                                            <a href="chitiet.html">
-                                                <h4 className="card-title">Tin tức số 1</h4>
-                                            </a>
-                                            <p className="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, doloremque possimus aliquid vitae sint, error explicabo iusto sed modi asperiores quae dolores. Quas unde voluptates, officiis voluptate voluptatem est quasi.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-4 mt-3">
-                                <div className="card-deck">
-                                    <div className="card">
-                                        <a href="http://"> <img className="card-img-top" src="http://placehold.it/800x400" alt="yub yeb" /></a>
-                                        <div className="card-body">
-                                            <a href="chitiet.html">
-                                                <h4 className="card-title">Tin tức số 1</h4>
-                                            </a>
-                                            <p className="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, doloremque possimus aliquid vitae sint, error explicabo iusto sed modi asperiores quae dolores. Quas unde voluptates, officiis voluptate voluptatem est quasi.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            {data.map((value, key) =>
+                                <NewsItem
+                                    key={key}
+                                    id={value.id}
+                                    tieuDe={value.tieuDe}
+                                    trichDan={value.trichDan}
+                                    noiDung={value.noiDung}
+                                    anh={value.anh}
+                                />
+                            )}
+
                         </div>
                     </div>
                 </div>
