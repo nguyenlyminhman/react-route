@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import '../css/App.css';
 import Nav from './Nav';
 import Home from './Home';
@@ -10,14 +11,13 @@ import RouterNews from '../router';
 class App extends Component {
     render() {
         return (
-            <div>
-                <Nav />
-                {/* <News /> */}
-                {/* <Home /> */}
-                {/* <NewsDetails /> */}
-                <RouterNews />
-                <Footer />
-            </div>
+            <Router>
+                <div>
+                    <Nav />
+                    <RouterNews />
+                    <Footer />
+                </div>
+            </Router>
         );
     }
 }
