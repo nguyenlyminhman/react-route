@@ -21,8 +21,8 @@ class RouterNews extends Component {
                     <Route exact path="/lien-he" component={Contact}/>
                 </div>
             </Router>
-         );
+        );
     }
 }
- 
+
 export default RouterNews;
