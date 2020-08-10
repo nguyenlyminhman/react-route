@@ -8,7 +8,7 @@ class Nav extends Component {
         return (
             <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
                 <div className="container">
-                    <a className="navbar-brand js-scroll-trigger" href="#page-top">React Router - News</a>
+                    <a className="navbar-brand js-scroll-trigger" href="/">React Router - News</a>
                     <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         Menu
                         <i className="fas fa-bars" />
@@ -16,13 +16,13 @@ class Nav extends Component {
                     <div className="collapse navbar-collapse" id="navbarResponsive">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <a className="nav-link js-scroll-trigger" href="#download">Tin Tức</a>
+                                <a className="nav-link js-scroll-trigger" href="/tin-tuc">Tin Tức</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link js-scroll-trigger" href="#features">Chi Tiết</a>
+                                <a className="nav-link js-scroll-trigger" href="/tin-chi-tiet">Chi Tiết</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link js-scroll-trigger" href="#contact">Liên Hệ</a>
+                                <a className="nav-link js-scroll-trigger" href="/lien-he">Liên Hệ</a>
                             </li>
                         </ul>
                     </div>
