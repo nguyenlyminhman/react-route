@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "tieuDe":"10 thương vụ đắt đỏ nhất lịch sử ngành công nghệ",
+        "trichDan":"Việc Dell mua lại EMC với giá 67 tỷ USD vào năm 2015, đến nay, vẫn là thương vụ đắt đỏ nhất lịch sử ngành công nghệ.",
+        "noiDung":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, doloremque possimus aliquid vitae sint, error explicabo iusto sed modi asperiores quae dolores. Quas unde voluptates, officiis voluptate voluptatem est quasi.",
+        "anh":"https://i1-sohoa.vnecdn.net/2020/08/05/descarga-8.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=YN10zDuWmkC_rO0IvrzPGw"
+    },
+    {
+        "id":2,
+        "tieuDe":"Apple khởi kiện ứng dụng có logo hình quả lê",
+        "trichDan":"Apple khởi kiện ứng dụng có logo hình quả lê",
+        "noiDung":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, doloremque possimus aliquid vitae sint, error explicabo iusto sed modi asperiores quae dolores. Quas unde voluptates, officiis voluptate voluptatem est quasi.",
+        "anh":"https://i1-sohoa.vnecdn.net/2020/08/10/Apple-9800-1597032089.png?w=1020&h=0&q=100&dpr=1&fit=crop&s=EnA92BGEM1n2d6ZTuN0n4g"
+    },
+    {
+        "id":3,
+        "tieuDe":"Huawei gặp khó khi Mỹ tẩy chay ứng dụng Trung Quốc",
+        "trichDan":"Huawei gặp khó khi Mỹ tẩy chay ứng dụng Trung Quốc",
+        "noiDung":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, doloremque possimus aliquid vitae sint, error explicabo iusto sed modi asperiores quae dolores. Quas unde voluptates, officiis voluptate voluptatem est quasi.",
+        "anh":"https://i1-sohoa.vnecdn.net/2020/08/09/huawei1-6558-1596987070.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=wG7xLqlDm3F9nYZRkmKG4w"
+    },
+    {
+        "id":4,
+        "tieuDe":"Bình chọn Máy giặt công nghệ mới kéo dài đến 17/8",
+        "trichDan":"Bình chọn Máy giặt công nghệ mới kéo dài đến 17/8",
+        "noiDung":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, doloremque possimus aliquid vitae sint, error explicabo iusto sed modi asperiores quae dolores. Quas unde voluptates, officiis voluptate voluptatem est quasi.",
+        "anh":"https://i1-sohoa.vnecdn.net/2020/08/10/TA-6581-1597031493.png?w=1020&h=0&q=100&dpr=1&fit=crop&s=hSloCJk5oJwT3A-sezJxtA"
+    },
+    {
+        "id":5,
+        "tieuDe":"Kết nối 6G sẽ thay đổi tương lai thế nào",
+        "trichDan":"Công nghệ 6G sẽ là nền tảng cho một kỷ nguyên thông minh, nơi AI và robot trở thành một phần thiết yếu của cuộc sống. ",
+        "noiDung":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, doloremque possimus aliquid vitae sint, error explicabo iusto sed modi asperiores quae dolores. Quas unde voluptates, officiis voluptate voluptatem est quasi.",
+        "anh":"https://i1-sohoa.vnecdn.net/2020/08/10/6G-7972-1597028307.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=1BbxDIN7UPnz1JZh-1391g"
+    },
+    {
+        "id":6,
+        "tieuDe":"HPE Simplivity gia tăng sức mạnh công nghệ cho doanh nghiệp",
+        "trichDan":"HPE SimpliVity là giải pháp hạ tầng siêu hội tụ, vận hành bởi trí tuệ nhân tạo (AI), mang khả năng phân tích, dự đoán thông minh, bảo mật và kiểm soát dữ liệu cao. ",
+        "noiDung":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, doloremque possimus aliquid vitae sint, error explicabo iusto sed modi asperiores quae dolores. Quas unde voluptates, officiis voluptate voluptatem est quasi.",
+        "anh":"https://i1-giadinh.vnecdn.net/2020/08/08/me-con-1-4757-1596882695.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=XmGuZub-Y6jIJC5Hmnkzpg"
+    }
+]
