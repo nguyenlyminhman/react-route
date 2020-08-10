@@ -11,9 +11,9 @@ class App extends Component {
         return (
             <div>
                 <Nav />
-                {/* <News /> */}
+                <News />
                 {/* <Home /> */}
-                <NewsDetails />
+                {/* <NewsDetails /> */}
                 <Footer />
             </div>
         );
