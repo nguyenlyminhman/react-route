@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import data from '../data/data.json'
 class NewsDetails extends Component {
     constructor(props) {
         super(props);
         this.state = {}
     }
     render() {
+        console.log(this.props);
         return (
+
             <div>
                 <header className="masthead tintuc">
                     <div className="container h-100">
@@ -19,28 +22,27 @@ class NewsDetails extends Component {
                     </div>
                 </header>
                 {/* End Navigation */}
-                {/* Begin chitiettintuc */}
-                <div className="jumbotron jumbotron-fluid">
-                    <div className="container">
-                        <img src="http://placehold.it/1900x700" alt="" className="img-fluid" />
-                        <p className="lead">Jumbo Helper Text</p>
-                        <hr className="my-2" />
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere non corporis quae earum voluptatibus repellat quibusdam quod tempora sequi, aliquid id voluptas accusamus, et porro perferendis exercitationem culpa, architecto ratione?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere non corporis quae earum voluptatibus repellat quibusdam quod tempora sequi, aliquid id voluptas accusamus, et porro perferendis exercitationem culpa, architecto ratione?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere non corporis quae earum voluptatibus repellat quibusdam quod tempora sequi, aliquid id voluptas accusamus, et porro perferendis exercitationem culpa, architecto ratione?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere non corporis quae earum voluptatibus repellat quibusdam quod tempora sequi, aliquid id voluptas accusamus, et porro perferendis exercitationem culpa, architecto ratione?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere non corporis quae earum voluptatibus repellat quibusdam quod tempora sequi, aliquid id voluptas accusamus, et porro perferendis exercitationem culpa, architecto ratione?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere non corporis quae earum voluptatibus repellat quibusdam quod tempora sequi, aliquid id voluptas accusamus, et porro perferendis exercitationem culpa, architecto ratione?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere non corporis quae earum voluptatibus repellat quibusdam quod tempora sequi, aliquid id voluptas accusamus, et porro perferendis exercitationem culpa, architecto ratione?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere non corporis quae earum voluptatibus repellat quibusdam quod tempora sequi, aliquid id voluptas accusamus, et porro perferendis exercitationem culpa, architecto ratione?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere non corporis quae earum voluptatibus repellat quibusdam quod tempora sequi, aliquid id voluptas accusamus, et porro perferendis exercitationem culpa, architecto ratione?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere non corporis quae earum voluptatibus repellat quibusdam quod tempora sequi, aliquid id voluptas accusamus, et porro perferendis exercitationem culpa, architecto ratione?</p>
-                        <p className="lead">
-                            <a className="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-                        </p>
-                    </div>
-                </div>
-                {/* End chitiettintuc */}
+                {/* Begin chitiettintuc */
+                    data.map((val, key) => {
+                        if (val.id === parseInt(this.props.match.params.id)) {
+                            return (
+                                <div className="jumbotron jumbotron-fluid" key={key}>
+                                    <div className="container">
+                                        <img src={val.anh} alt="" className="img-fluid" />
+                                        <p className="lead">{val.tieuDe}</p>
+                                        <hr className="my-2" />
+                                        <p>{val.trichDan}</p>
+                                        <p>{val.noiDung}</p>
+                                        <p className="lead">
+                                            <a className="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            )
+                        }
+                    })
+
+                /* End chitiettintuc */}
                 <div className="container">
                     <h3 className="card-title text-center">Tin Liên Quan</h3>
                     <div className="row">
@@ -63,9 +65,7 @@ class NewsDetails extends Component {
                                 <a href="chitiet.html"> <img className="card-img-top" src="http://placehold.it/500x300" alt="" /></a>
                                 <div className="card-body">
                                     <h4 className="card-title">Title</h4>
-                                    <p className="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nesciunt ducimus, error nobis rem voluptate autem perspiciatis debitis reprehenderit veniam aperiam molestiae nulla. Quia placeat nobis accusantium dolorem quidem
-                                    ipsa!
-            </p>
+                                    <p className="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                             </div>
                             <div className="card">
