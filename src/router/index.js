@@ -16,7 +16,7 @@ class RouterNews extends Component {
             <div>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/tin-tuc" component={News} />
-                <Route exact path="/tin-chi-tiet" component={NewsDetails} />
+                <Route exact path="/tin-chi-tiet/:slug.:id.html" component={NewsDetails} />
                 <Route exact path="/lien-he" component={Contact} />
             </div>
         );
