@@ -1,11 +1,27 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 
 class Contact extends Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+            isRedirect: false
+        }
     }
+
+    submitForm = (event) => {
+        event.preventDefault();
+        this.setState({
+            isRedirect: true
+        })
+    }
+
     render() {
+
+        if (this.state.isRedirect) {
+            return <Redirect to='/' />
+        }
+
         return (
             <div>
                 <header className="masthead tintuc">
@@ -55,7 +71,11 @@ class Contact extends Component {
                                     </div>
                                     <br />
                                     <div id="success" />
-                                    <div className="form-group"><button className="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
+                                    <div className="form-group">
+                                        <button onClick={(event)=>this.submitForm(event)} className="btn btn-primary btn-xl" id="sendMessageButton" type="submit">
+                                            Send
+                                        </button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
