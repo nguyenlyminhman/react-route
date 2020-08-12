@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import data from '../data/data.json'
+import NewsRelated from './NewsRelated'
 class NewsDetails extends Component {
     constructor(props) {
         super(props);
         this.state = {}
     }
     render() {
-        console.log(this.props);
+        let count = 1;
         return (
 
             <div>
@@ -47,34 +48,26 @@ class NewsDetails extends Component {
                     <h3 className="card-title text-center">Tin Liên Quan</h3>
                     <div className="row">
                         <div className="card-deck">
-                            <div className="card">
-                                <a href="chitiet.html"> <img className="card-img-top" src="http://placehold.it/500x300" alt="" /></a>
-                                <div className="card-body">
-                                    <h4 className="card-title">Title </h4>
-                                    <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga debitis aut, pariatur nam tempore, beatae iure non accusamus cumque, soluta exercitationem dolor facilis. Maiores possimus sint et aperiam magni?</p>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <a href="chitiet.html"> <img className="card-img-top" src="http://placehold.it/500x300" alt="" /></a>
-                                <div className="card-body">
-                                    <h4 className="card-title">Title</h4>
-                                    <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum provident illum corporis impedit perspiciatis voluptas quos, assumenda quibusdam esse corrupti, dignissimos tempora accusamus nihil. Quo explicabo mollitia corrupti voluptas vel.</p>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <a href="chitiet.html"> <img className="card-img-top" src="http://placehold.it/500x300" alt="" /></a>
-                                <div className="card-body">
-                                    <h4 className="card-title">Title</h4>
-                                    <p className="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <a href="chitiet.html"> <img className="card-img-top" src="http://placehold.it/500x300" alt="" /></a>
-                                <div className="card-body">
-                                    <h4 className="card-title">Title</h4>
-                                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error iste pariatur consectetur nulla beatae quia, aspernatur tempora, ducimus perspiciatis veniam enim eum delectus. Iure aliquid id amet perspiciatis porro eos.</p>
-                                </div>
-                            </div>
+
+                            {
+                                data.map((val, key) => {
+                                    if (val.id !== parseInt(this.props.match.params.id)) {
+                                        if (count < 5) {
+                                            count++
+                                            return (
+                                                <NewsRelated
+                                                    key={key}
+                                                    id={val.id}
+                                                    tieuDe={val.tieuDe}
+                                                    anh={val.anh}
+                                                    trichDan={val.trichDan}
+                                                >
+                                                </NewsRelated>
+                                            )
+                                        }
+                                    }
+                                })
+                            }
                         </div>
                     </div>
                 </div>
