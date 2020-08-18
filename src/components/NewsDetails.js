@@ -40,6 +40,8 @@ class NewsDetails extends Component {
                                     </div>
                                 </div>
                             )
+                        }else{
+                            return <div />
                         }
                     })
 
@@ -64,7 +66,11 @@ class NewsDetails extends Component {
                                                 >
                                                 </NewsRelated>
                                             )
+                                        }else{
+                                            return <div />;
                                         }
+                                    }else{
+                                        return <div />;
                                     }
                                 })
                             }
