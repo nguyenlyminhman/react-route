@@ -9,7 +9,8 @@ class Contact extends Component {
             ctName: '',
             ctEmail: '',
             ctPhone: '',
-            ctMessage: ''
+            ctMessage: '',
+            fDate: 'monday'
         }
     }
 
@@ -82,7 +83,14 @@ class Contact extends Component {
                                             <p className="help-block text-danger" />
                                         </div>
                                     </div>
-                                    <br />
+                                    <div className="form-group">
+                                        <label>Day</label>
+                                        <select value={this.state.fDate} name="fDate" onChange={(event) => this.isChange(event)} className="form-control" >
+                                            <option value="sunday" >Sun</option>
+                                            <option value="monday">Mon</option>
+                                            <option value="tuesday">Tue</option>
+                                        </select>
+                                    </div>
                                     <div id="success" />
                                     <div className="form-group">
                                         <button onClick={(event) => this.submitForm(event)} className="btn btn-primary btn-xl" id="sendMessageButton" type="submit">
