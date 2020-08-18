@@ -10,7 +10,8 @@ class Contact extends Component {
             ctEmail: '',
             ctPhone: '',
             ctMessage: '',
-            fDate: 'monday'
+            fDate: 'monday',
+            fFile: ''
         }
     }
 
@@ -27,6 +28,14 @@ class Contact extends Component {
         this.setState({
             //array name
             [name]: value
+        })
+    }
+
+    isFileChange = (event) => {
+        let objFile = event.target.files
+
+        this.setState({
+            fFile: objFile
         })
     }
 
@@ -90,6 +99,10 @@ class Contact extends Component {
                                             <option value="monday">Mon</option>
                                             <option value="tuesday">Tue</option>
                                         </select>
+                                    </div>
+                                    <div className="form-group">
+                                        <label>Files</label>
+                                        <input name="fFile" onChange={(event) => this.isFileChange(event)} className="form-control" id="file" type="file" />
                                     </div>
                                     <div id="success" />
                                     <div className="form-group">
